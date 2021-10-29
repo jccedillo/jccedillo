@@ -1,0 +1,229 @@
+#OP402
+#include <Wire.h>
+#include <LCD.h>
+#include <LiquidCrystal_I2C.h>
+
+LiquidCrystal_I2C LCD (0x27, 2, 1, 0, 4, 5, 6, 7); //DIR, E, RW, RS, D4, D5, D6, D7
+
+void setup() {
+  LCD.setBacklightPin(3,POSITIVE);
+  LCD.setBacklight(LOW);
+  LCD.begin(16, 2);
+  LCD.clear();
+  
+ }
+
+void loop() {
+
+  // 1
+  LCD.setCursor(0, 0);
+  LCD.print("DELIVERY MGR RSP");
+  LCD.setCursor(0, 1);
+  LCD.print("Propsal creation");
+  //LCD.scrollDisplayLeft();
+  delay(4000);
+ // 2
+  LCD.setCursor(0, 0);
+  LCD.print("1.Scope/timeline");
+  LCD.setCursor(0, 1);
+  LCD.print("and Deliverables");
+  delay(4000);
+ //
+  LCD.setCursor(0, 0);
+  LCD.print("2.Obtain pricing");
+  LCD.setCursor(0, 1);
+  LCD.print("w/comrcial Sales");
+  delay(4000);
+ // 3
+  LCD.setCursor(0, 0);
+  LCD.print("REVIEW SIGND SOW");
+  LCD.setCursor(0, 1);
+  LCD.print("WRK ORDERS& PLAN");
+  delay(4000);
+ // 4
+  LCD.setCursor(0, 0);
+  LCD.print("1.Coord delivery");
+  LCD.setCursor(0, 1);
+  LCD.print("accordngly t/SOW");
+  delay(4000);   
+ //5
+  LCD.setCursor(0, 0);
+  LCD.print("Availblty & Cost");
+  LCD.setCursor(0, 1);
+  LCD.print("of resources    ");
+  delay(4000);   
+// 6
+  LCD.setCursor(0, 0);
+  LCD.print("1.Confrm project");
+  LCD.setCursor(0, 1);
+  LCD.print("Start date      ");
+  delay(3000);   
+// 6a
+  LCD.setCursor(0, 0);   
+  LCD.print("2.Perfrm Resourc");
+  LCD.setCursor(0, 1);
+  LCD.print("allocation and  ");
+  delay(4000);   
+// 7
+  LCD.setCursor(0, 0);   
+  LCD.print("work-ld assgnmnt");
+  LCD.setCursor(0, 1);
+  LCD.print("accord delry rqs");
+  delay(3000);   
+// 8
+  LCD.setCursor(0, 0);   
+  LCD.print("Oversee dly acts");
+  LCD.setCursor(0, 1);
+  LCD.print("Provide Directn ");
+  delay(4000);   
+// 9
+  LCD.setCursor(0, 0);   
+  LCD.print("Provide Guidance");
+  LCD.setCursor(0, 1);
+  LCD.print("as needed       ");
+  delay(4000);   
+// 10
+  LCD.setCursor(0, 0);   
+  LCD.print("Analyze Customer");
+  LCD.setCursor(0, 1);
+  LCD.print("orders,set dlvry");
+  delay(4000);   
+// 11
+  LCD.setCursor(0, 0);   
+  LCD.print("prioritz & make ");
+  LCD.setCursor(0, 1);
+  LCD.print("schedle adjustmt");
+  delay(4000);   
+// 12
+  LCD.setCursor(0, 0);   
+  LCD.print("to make timely  ");
+  LCD.setCursor(0, 1);
+  LCD.print("delivery goals  ");
+  delay(4000);   
+// 13
+  LCD.setCursor(0, 0);   
+  LCD.print("ensure that team");
+  LCD.setCursor(0, 1);
+  LCD.print("maintains high  ");
+  delay(4000);    
+// 14
+  LCD.setCursor(0, 0);   
+  LCD.print("level competence");
+  LCD.setCursor(0, 1);
+  LCD.print("& op. excellence");
+  delay(4000);    
+ // 15
+  LCD.setCursor(0, 0);   
+  LCD.print("evaluate team   ");
+  LCD.setCursor(0, 1);
+  LCD.print("members perfrmnc");
+  delay(4000);     
+// 16
+  LCD.setCursor(0, 0);   
+  LCD.print("Determine needs ");
+  LCD.setCursor(0, 1);
+  LCD.print("for training    ");
+  delay(4000);      
+// 17
+  LCD.setCursor(0, 0);   
+  LCD.print("serve as primary");
+  LCD.setCursor(0, 1);
+  LCD.print("contact f/custmr");
+  delay(4000);      
+// 18
+  LCD.setCursor(0, 0);   
+  LCD.print(" inquires and   ");
+  LCD.setCursor(0, 1);
+  LCD.print(" concerns       ");
+  delay(4000);      
+ // 20
+  LCD.setCursor(0, 0);   
+  LCD.print("develop scope & ");
+  LCD.setCursor(0, 1);
+  LCD.print("timeline f/dlvry");
+  delay(4000);      
+ // 21
+  LCD.setCursor(0, 0);   
+  LCD.print("include economcs");
+  LCD.setCursor(0, 1);
+  LCD.print("witd DCS approvl");
+  delay(4000); 
+  // 22
+  LCD.setCursor(0, 0);   
+  LCD.print("report dlvry sts");
+  LCD.setCursor(0, 1);
+  LCD.print("to customers    ");
+  delay(4000);      
+ // 23
+  LCD.setCursor(0, 0);   
+  LCD.print("devlop dlvry doc");
+  LCD.setCursor(0, 1);
+  LCD.print("w/ PMO tool kits");
+  delay(4000);  
+ // 24
+  LCD.setCursor(0, 0);   
+  LCD.print("Mng ea/dlvryteam");
+  LCD.setCursor(0, 1);
+  LCD.print("to ensure timely");
+  delay(4000);      
+// 25
+  LCD.setCursor(0, 0);   
+  LCD.print("& accurate dlvry");
+  LCD.setCursor(0, 1);
+  LCD.print("accordngly t/SOW");
+  delay(4000);      
+// 26
+  LCD.setCursor(0, 0);   
+  LCD.print("build positive  ");
+  LCD.setCursor(0, 1);
+  LCD.print("and productive  ");
+  delay(4000);      
+// 27
+  LCD.setCursor(0, 0);   
+  LCD.print("working rltnshps");
+  LCD.setCursor(0, 1);
+  LCD.print("w/k2 Proj Teams ");
+  delay(4000);      
+// 28
+  LCD.setCursor(0, 0);   
+  LCD.print("w/Customers     ");
+  LCD.setCursor(0, 1);
+  LCD.print("f/Business grwth");
+  delay(4000);      
+// 29
+  LCD.setCursor(0, 0);   
+  LCD.print("analyz & trblsht");
+  LCD.setCursor(0, 1);
+  LCD.print("delivery issues ");
+  delay(4000);     
+// 29
+  LCD.setCursor(0, 0);   
+  LCD.print("in timely fashon");
+  LCD.setCursor(0, 1);
+  LCD.print("develop process ");
+  delay(4000);      
+// 30
+  LCD.setCursor(0, 0);   
+  LCD.print("Improvements to ");
+  LCD.setCursor(0, 1);
+  LCD.print("achieve costs   ");
+  delay(4000);                         
+// 31
+  LCD.setCursor(0, 0);   
+  LCD.print("effectiveness & ");
+  LCD.setCursor(0, 1);
+  LCD.print("time savings    ");
+  delay(4000);      
+// 32 
+  LCD.setCursor(0, 0);   
+  LCD.print("make critical Op");
+  LCD.setCursor(0, 1);
+  LCD.print("business dcsions");
+  delay(4000);         
+// 33 
+  LCD.setCursor(0, 0);   
+  LCD.print("to meet customer");
+  LCD.setCursor(0, 1);
+  LCD.print("expentations    ");
+  delay(4000);  
+}
